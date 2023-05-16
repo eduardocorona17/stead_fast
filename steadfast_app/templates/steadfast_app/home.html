@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steadfast Software Development</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  
+  
+</head>
+<body>
+
+
+  <h1 class="hidden JH1">S t e a d f a s t</h1> 
+  <h3 class="hidden JH1">Software Development</h3>
+  <h4 class="hidden bbscroll JH1"><small>scroll<br><i class="arrow"></i></small></h4> 
+  
+  <br>
+  
+  
+  <p class="hidden JH2">What Can I Do For You?</p>
+ <h5 class="hidden bbscroll_2"><small>scroll<br><i class="arrow"></i></small></h5>
+ <p class="push_down"></p>
+  
+  <div class="center hidden">
+  <br>
+  
+  <p class="edit_one hidden">
+    <a href="#" class="editable">Build My Site</a>
+  </p>
+  <br>
+  
+  <p class="edit_two hidden">
+    <a href="#" class="editable">Maintain, Debug, Update My Site</a>
+  </p>
+  <br>
+  
+  <p class="edit_three hidden">
+    <a href="#" class="editable">Consult</a>
+  </p>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+  </script>
+  
+</body>
+</html>

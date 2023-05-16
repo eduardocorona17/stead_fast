@@ -1,0 +1,167 @@
+.center {
+    text-align: center;
+    
+  }
+
+  body {
+    background-color: rgb(32, 32, 104);
+    color: rgb(239, 228, 144);
+    font-family:Copperplate, Papyrus, fantasy;
+   
+    
+  }
+  
+  h1, h3, h4 {
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  .push_down {
+    margin-bottom: 300px;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(239, 228, 144);;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .editable {
+    
+    margin-bottom: 200px;
+  }
+.edit {
+  margin-bottom: 150px;
+}
+
+  .hidden {
+    text-align: center;
+    opacity: 0;
+    transition: all 3s;
+  }
+
+
+
+  .show {
+    opacity: 1;
+  }
+
+ 
+  .bbscroll {
+    text-align: center;
+    font-size: 15px;
+    animation: bounce 1s linear;
+    animation-delay: 4.75s;
+    margin-bottom: -15px;
+  }
+    
+   
+    
+    
+  
+
+.edit_one, 
+.edit_two, 
+.edit_three {
+  margin-bottom: 150px;
+  
+}
+
+
+  
+    
+  @keyframes bounce {
+    20%, 50%, 80%, to {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-10px);
+    }
+    40% {
+      transform: translateY(-8px);
+    }
+    60% {
+      transform: translateY(-6px);
+    }
+    70% {
+      transform: translateY(-4px);
+    }
+    90% {
+      transform: translateY(-2px);
+    }
+    100% {
+      transform: translateY(-1px);
+    }
+    
+  }
+
+  .JH1 {
+    transition: all 3s;
+    transition-delay: 100ms;
+  }
+  
+  .JH1:nth-child(1) {
+    font-size: 80px;
+    margin-bottom: -15px;
+  }
+
+  .JH1:nth-child(2) {
+    transition-delay: 200ms;
+    font-size: xx-large;
+    margin-bottom: 280px;
+  }
+
+  .JH1:nth-child(3) {
+    transition-delay: 300ms;
+    margin-bottom: 300px;
+  }
+  
+  .JH1:nth-child(4) {
+    transition-delay: 4s;
+    
+  }
+
+.JH2 {
+  margin-bottom: 200px;
+  transition-delay: 400ms;
+  font-size: larger;
+}
+
+.bbscroll_2 {
+  animation: bounce 1s linear;
+  animation-delay: 6.75s;
+  transition-delay: 500ms;
+  font-size: 15px;
+  
+}
+
+.edit_one {
+  transition-delay: 600ms;
+}
+
+.edit_two {
+  transition-delay: 700ms;
+}
+
+.edit_three {
+  transition-delay: 750ms;
+}
+
+.arrow {
+  border: solid;
+  color: rgb(239, 228, 144);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
